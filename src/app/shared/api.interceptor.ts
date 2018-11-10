@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 export class ApiInterceptor implements HttpInterceptor {
   intercept(request: HttpRequest<any>, next: HttpHandler) {
     return next.handle(request.clone({
-      url: `/mock/${request.url}.json`
+      url: `mock/${request.url}.json`
     }));
   }
 }
