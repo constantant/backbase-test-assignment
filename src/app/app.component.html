@@ -1,0 +1,25 @@
+<header>
+  <div fxLayout="row" fxLayoutAlign="center" fxLayoutGap="20px" class="app-header">
+    <div fxFlex="grow" fxFlexAlign="center" class="app-logo"></div>
+    <div class="app-balance" *ngIf="account$ | async as account">
+      <div class="app-balance-name">{{account.name}}</div>
+      <div class="app-balance-amount">balance: {{account.amount | currency}}</div>
+    </div>
+  </div>
+</header>
+<section>
+  <div fxLayout="row" fxLayoutGap="20px" class="app-content">
+    <app-make-transfer [fxHide.lt-md]="true"></app-make-transfer>
+    <app-recent-transactions fxFlex="grow"></app-recent-transactions>
+  </div>
+  <button
+    [fxHide]="true"
+    [fxShow.lt-md]="true"
+    mat-fab
+    color="accent"
+    class="app-add-button"
+    (click)="openAddDialog()"
+  >
+    <mat-icon>swap_horiz</mat-icon>
+  </button>
+</section>
