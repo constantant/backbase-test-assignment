@@ -1,4 +1,10 @@
-# BackbaseTestAssignment
+# Backbase Test Assignment
+
+- The application is written with Angular 7 which is most appropriate for such a task.
+- There is no difference between dev and prod versions but it is easy to implement into [api.interceptor.ts](src/app/shared/api.interceptor.ts).
+- Due to Angular Material, some parts of the app can have a bit different appearance than on the design picture.
+- The description says that we need a confirm step on the Make a Transfer form. I've decided to use [MatStepper](https://material.angular.io/components/stepper/overview), seems it fits good there. 
+- On the mobile view the Make a Transfer form is hidden with [Dialog](https://material.angular.io/components/dialog/overview) window which can be called by the bottom orange button.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.2.
 
