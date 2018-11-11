@@ -47,7 +47,7 @@ export class AccountService {
         return;
       }
       account.amount = delta;
-      data.push(transaction);
+      data.push({...transaction, transactionDate: new Date().getTime()});
       this.transactions$ = of({data});
       this.newTransaction$$.next(true);
     });

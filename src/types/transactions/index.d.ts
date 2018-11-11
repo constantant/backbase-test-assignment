@@ -7,6 +7,6 @@ interface ITransaction {
   categoryCode: string;
   merchant: string;
   merchantLogo: string;
-  transactionDate: number;
+  transactionDate?: number;
   transactionType: string;
 }

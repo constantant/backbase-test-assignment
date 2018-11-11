@@ -5,6 +5,7 @@
 - Due to Angular Material, some parts of the app can have a bit different appearance than on the design picture.
 - The description says that we need a confirm step on the Make a Transfer form. I've decided to use [MatStepper](https://material.angular.io/components/stepper/overview), seems it fits good there. 
 - On the mobile view the Make a Transfer form is hidden with [Dialog](https://material.angular.io/components/dialog/overview) window which can be called by the bottom orange button.
+- Some unit tests were added `ng test`
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.2.
 

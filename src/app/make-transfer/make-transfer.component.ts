@@ -55,7 +55,6 @@ export class MakeTransferComponent implements AfterViewInit {
         categoryCode: '#1180aa',
         merchant: to,
         merchantLogo: 'https://avatars2.githubusercontent.com/u/5537730',
-        transactionDate: new Date().getTime(),
         transactionType: 'Transaction'
       }, from);
     });
